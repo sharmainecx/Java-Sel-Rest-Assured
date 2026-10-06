@@ -16,9 +16,7 @@ public class HashMapPostRequest {
         HashMap<String, Object> hm = new HashMap<>();
 
         hm.put("name", "Barry Allen");
-
-
-        hm.put("age", "20");
+        hm.put("age", 20);
         hm.put("grade", "12th");
 
         String [] subjects = {"Math", "English", "Science"};
@@ -45,5 +43,8 @@ public class HashMapPostRequest {
         String[] expected = (String[]) hm.get("subjects");
 
         Assert.assertEquals(resSubjects, Arrays.asList(expected));
+        Assert.assertEquals(hm.get("name"), name);
+        Assert.assertEquals(hm.get("age"), age);
+        Assert.assertEquals(hm.get("grade"), grade);
     }
 }
