@@ -13,7 +13,7 @@ public class HashMapPostRequest {
     @Test
     public void createPostRequestUsingHashMap(){
 
-        HashMap hm = new HashMap();
+        HashMap<String, Object> hm = new HashMap<>();
 
         hm.put("name", "Barry Allen");
 
