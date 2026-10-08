@@ -1,3 +1,5 @@
+package Reqres.inAPIs;
+
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -5,7 +7,6 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class PostRequest {

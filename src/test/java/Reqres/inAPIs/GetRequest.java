@@ -1,3 +1,5 @@
+package Reqres.inAPIs;
+
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
