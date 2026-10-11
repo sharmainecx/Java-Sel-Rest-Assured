@@ -1,4 +1,4 @@
-package JSONServerAPIs;
+package jsonserverapis;
 
 import io.restassured.response.Response;
 import org.testng.Assert;

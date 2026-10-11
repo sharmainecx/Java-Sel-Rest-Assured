@@ -1,4 +1,4 @@
-package Reqres.inAPIs;
+package reqresapis;
 
 import org.testng.annotations.Test;
 

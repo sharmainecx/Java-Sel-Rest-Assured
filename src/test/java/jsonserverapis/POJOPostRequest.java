@@ -1,7 +1,6 @@
-package JSONServerAPIs;
+package jsonserverapis;
 
-import POJO.PostRequest;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import pojo.PostRequest;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package Reqres.inAPIs;
+package reqresapis;
 
 import io.restassured.response.Response;
 import org.testng.Assert;

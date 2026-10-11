@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order>
+    <id>0</id>
+    <petId>0</petId>
+    <quantity>0</quantity>
+    <shipDate>2026-10-10T22:07:49.155Z</shipDate>
+    <status>placed</status>
+    <complete>true</complete>
+</Order>

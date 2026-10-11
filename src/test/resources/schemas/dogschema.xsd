@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="Order">
+        <xs:complexType>
+            <!-- xs:all means the elements can appear in any order -->
+            <xs:all>
+                <xs:element name="complete" type="xs:boolean"/>
+                <xs:element name="id" type="xs:long"/>
+                <xs:element name="petId" type="xs:long"/>
+                <xs:element name="quantity" type="xs:int"/>
+                <xs:element name="shipDate" type="xs:dateTime"/>
+
+                <xs:element name="status">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="placed"/>
+                            <xs:enumeration value="approved"/>
+                            <xs:enumeration value="delivered"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

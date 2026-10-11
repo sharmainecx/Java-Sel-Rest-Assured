@@ -1,4 +1,4 @@
-package JSONServerAPIs;
+package jsonserverapis;
 
 import io.restassured.response.Response;
 import org.json.JSONObject;
@@ -17,7 +17,7 @@ public class ExternalJSONFilePostRequest {
 
     @Test
     public void createUser() throws FileNotFoundException {
-        File f = new File ("src/test/java/Payload/body.json");
+        File f = new File ("src/test/resources/payloads/body.json");
         FileReader fr = new FileReader(f);
         JSONTokener jt = new JSONTokener(fr);
         JSONObject data = new JSONObject(jt);
@@ -33,9 +33,4 @@ public class ExternalJSONFilePostRequest {
         Assert.assertEquals(response.getContentType(), "application/json");
         Assert.assertEquals(response.jsonPath().getString("name"), data.get("name"));
     }
-
-
-
-
-
 }
